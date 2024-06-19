@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- *main - last digit of
- *greater, less and is
- *Return: dont make me cry pls
+ * main - last digit of
+ * greater, less and is
+ * Return: dont make me cry pls
  */
 
 int main(void)
