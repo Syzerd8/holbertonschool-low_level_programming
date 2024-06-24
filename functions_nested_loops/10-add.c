@@ -1,25 +1,14 @@
 #include "main.h"
 
 /**
- * jack_bauer - jve ossi regardé 1 séri
- * : isnogood
- * Return: Always 0
+ * add - adds 2 integers
+ * @z: 1st value
+ * @y: 2nd value
+ * Return: result
  */
 
-void jack_bauer(void)
+int add(int z, int y)
 {
-	int h, m;
+	return (z + y);
 
-	for (h = 0; h <= 23; h++)
-	{
-		for (m = 0; m <= 59; m++)
-		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
-			_putchar(':');
-			_putchar((m / 10) + '0');
-			_putchar((m % 10) + '0');
-			_putchar('\n');
-		}
-	}
 }
