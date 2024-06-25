@@ -15,15 +15,15 @@ int main(void)
 	{
 		if (z % 3 == 0 && z % 5 != 0)
 		{
-			printf("Fizz");
+			printf(" Fizz");
+		}
+		else if (z % 5 == 0 && z % 3 != 0)
+		{
+			printf(" Buzz");
 		}
 		else if (z % 5 == 0 && z % 3 == 0)
 		{
-			printf("Buzz");
-		}
-		else if (z % 5 == 0 && z % 3 == 0)
-		{
-			printf("FizzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (z == 1)
 		{
@@ -31,7 +31,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", z);
+			printf(" %d", z);
 		}
 	}
 	putchar('\n');
