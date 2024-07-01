@@ -5,18 +5,22 @@
  * reverse_array - reverse the content of an array of integers
  * @a : pointer
  * @n : integer
- * Return: 0
+ *
  */
 void reverse_array(int *a, int n)
 {
-	int len, i;
+	int i, last;
 
-	for (i = n - 1; i > n / 2; i++)
+	last = n - 1;
+
+	for (i = 0; i < n / 2; i++)
 	{
-		len = a[n - 1 - i];
-		a[n - 1 - i] = a[i];
-		a[i] = len;
+		int start, end;
 
+		start = a[i];
+		end = a[last];
+		a[i] = end;
+		a[last] = start;
+		last--;
 	}
-
 }
